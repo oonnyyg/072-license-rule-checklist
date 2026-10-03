@@ -1,0 +1,10 @@
+{
+  "licenses": [
+    {"code": "MIT", "required_materials": ["license", "notice"]},
+    {"code": "GPL", "required_materials": ["license", "notice", "source-offer"]}
+  ],
+  "allowed_pairs": [
+    {"parent": "MIT", "child": "GPL"},
+    {"parent": "GPL", "child": "MIT"}
+  ]
+}

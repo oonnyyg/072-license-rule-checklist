@@ -1,0 +1,9 @@
+{
+  "roots": ["svc-auth", "svc-gateway"],
+  "components": [
+    {"id": "svc-auth", "license": "MIT", "dependencies": ["lib-crypto", "lib-net"], "materials": ["license", "notice"]},
+    {"id": "svc-gateway", "license": "GPL", "dependencies": ["lib-net"], "materials": ["license", "notice", "source-offer"]},
+    {"id": "lib-crypto", "license": "GPL", "dependencies": [], "materials": ["license"]},
+    {"id": "lib-net", "license": "UNKNOWN-X", "dependencies": ["svc-auth"], "materials": []}
+  ]
+}

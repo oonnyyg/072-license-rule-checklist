@@ -1,0 +1,111 @@
+{
+  "roots": [
+    {
+      "root": "svc-auth",
+      "reachable": [
+        "lib-crypto",
+        "lib-net",
+        "svc-auth"
+      ],
+      "issues": [
+        {
+          "kind": "missing_materials",
+          "component": "lib-crypto",
+          "missing_materials": [
+            "notice",
+            "source-offer"
+          ],
+          "path": [
+            "svc-auth",
+            "lib-crypto"
+          ]
+        },
+        {
+          "kind": "unknown_license",
+          "component": "lib-net",
+          "path": [
+            "svc-auth",
+            "lib-net"
+          ]
+        },
+        {
+          "kind": "undecidable_dependency",
+          "component": "lib-net",
+          "dependency": "svc-auth",
+          "path": [
+            "svc-auth",
+            "lib-net"
+          ]
+        },
+        {
+          "kind": "undecidable_dependency",
+          "component": "svc-auth",
+          "dependency": "lib-net",
+          "path": [
+            "svc-auth"
+          ]
+        }
+      ]
+    },
+    {
+      "root": "svc-gateway",
+      "reachable": [
+        "lib-crypto",
+        "lib-net",
+        "svc-auth",
+        "svc-gateway"
+      ],
+      "issues": [
+        {
+          "kind": "missing_materials",
+          "component": "lib-crypto",
+          "missing_materials": [
+            "notice",
+            "source-offer"
+          ],
+          "path": [
+            "svc-gateway",
+            "lib-net",
+            "svc-auth",
+            "lib-crypto"
+          ]
+        },
+        {
+          "kind": "unknown_license",
+          "component": "lib-net",
+          "path": [
+            "svc-gateway",
+            "lib-net"
+          ]
+        },
+        {
+          "kind": "undecidable_dependency",
+          "component": "lib-net",
+          "dependency": "svc-auth",
+          "path": [
+            "svc-gateway",
+            "lib-net"
+          ]
+        },
+        {
+          "kind": "undecidable_dependency",
+          "component": "svc-auth",
+          "dependency": "lib-net",
+          "path": [
+            "svc-gateway",
+            "lib-net",
+            "svc-auth"
+          ]
+        },
+        {
+          "kind": "undecidable_dependency",
+          "component": "svc-gateway",
+          "dependency": "lib-net",
+          "path": [
+            "svc-gateway"
+          ]
+        }
+      ]
+    }
+  ]
+}
